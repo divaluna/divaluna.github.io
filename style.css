@@ -3,11 +3,6 @@
     src: url(/Users/diva/Library/Fonts/edwardianscriptitc.ttf);
 }
 
-title{
-    font-family:'Edwardian Script';
-    color: black
-}
-
 body{
     font-family: "Arial", sans-serif;
     font-size: 12;
@@ -16,9 +11,9 @@ body{
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    color: dimgray;
-    font-size: medium;
+    font-family:'Edwardian Script';
+    color: black;
+    font-size: large;
 }
 
 h2{
