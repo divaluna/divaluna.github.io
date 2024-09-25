@@ -67,12 +67,14 @@ a:visited {
 
 table,th,td{
     border: 1px solid black;
+    padding: 5px;
     border-collapse: collapse;
 }
 
 table{
     width: 100%;
 }
+
 
 
 
