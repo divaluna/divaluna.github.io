@@ -6,14 +6,12 @@ body{
 
 body, h2, h3, h4, p{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px
 }
 
 h1{
     font-family: 'Bertholdr Mainzer Fraktur', sans-serif;               
     color: black;
     font-size: 200%;
-    padding: 10px
 }
 
 h2{
@@ -66,7 +64,7 @@ a:visited {
     text-decoration: underline;
 }
 
-table,td,tr{
+table,td,th,tr{
     border: 1px solid black;
     padding: 7px;
     border-collapse: collapse;
