@@ -60,9 +60,9 @@ a:visited {
     text-decoration: none;
 }
 
-div{
-    border: 5px outset rgb(235, 168, 186);
-    background-color: #ffffff;
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 
