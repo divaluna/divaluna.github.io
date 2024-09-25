@@ -65,7 +65,7 @@ a:visited {
     text-decoration: none;
 }
 
-table,th,td{
+table,th,td,tr{
     border: 1px solid black;
     padding: 5px;
     border-collapse: collapse;
@@ -73,6 +73,10 @@ table,th,td{
 
 table{
     width: 100%;
+}
+
+tr{
+    background-color: #f9d5e2;
 }
 
 
