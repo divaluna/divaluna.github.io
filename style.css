@@ -59,10 +59,9 @@ a:active {
 
 a:visited {
     color: #f776a3;
-    background-color: #ffffff;
     padding: 5px;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 table,th,td,tr{
@@ -76,7 +75,7 @@ table{
 }
 
 tr{
-    background-color: #f9d5e2;
+    background-color: #f4b3ca;
 }
 
 
