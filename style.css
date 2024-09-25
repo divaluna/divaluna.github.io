@@ -64,7 +64,7 @@ a:visited {
     text-decoration: underline;
 }
 
-table,th,td,tr{
+table,td,tr{
     border: 1px solid black;
     padding: 7px;
     border-collapse: collapse;
