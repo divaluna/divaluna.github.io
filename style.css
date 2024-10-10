@@ -34,6 +34,7 @@ h4{
 }
 
 p{
+    margin-top: 10px;
     font-size: 12;
     color: black
 }
@@ -118,6 +119,7 @@ th{
 }
 
 .dropdown-content {
+    list-style: none;
     display: none;
     position: absolute;
     top: 100%;
@@ -138,6 +140,7 @@ th{
 }
 
 .dropdown-content a {
+    padding: 10px;
     display: block;
     background-color: #f4f0f3;
     color: #891e3b;
