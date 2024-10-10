@@ -75,7 +75,7 @@ table,td,th,tr{
 .button{
     background-color: white;
     color: black;
-    border 2px solid #f776a3;
+    border: 2px solid #f776a3;
     transition-duration: 0.4s;
 }
 
