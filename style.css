@@ -66,12 +66,6 @@ a:visited {
     text-decoration: underline;
 }
 
-table,td,th,tr{
-    border: 1px solid black;
-    padding: 7px;
-    border-collapse: collapse;
-}
-
 button{
     margin-top: 20px;
     background-color: white;
@@ -83,6 +77,12 @@ button{
 button:hover{
     background-color: #f776a3;
     color:white;
+}
+
+table,td,th,tr{
+    border: 1px solid black;
+    padding: 7px;
+    border-collapse: collapse;
 }
 
 .clickable-image{
