@@ -66,7 +66,7 @@ a:visited {
     text-decoration: underline;
 }
 
-#nameButton{
+.button{
     margin-top: 20px;
     background-color: white;
     color: black;
@@ -74,7 +74,7 @@ a:visited {
     transition-duration: 0.4s;
 }
 
-#nameButton:hover{
+.button:hover{
     background-color: #f776a3;
     color:white;
 }
@@ -110,6 +110,8 @@ th{
 
 .menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
     font-size: 16px;
@@ -129,7 +131,6 @@ th{
 }
 
 .dropdown-content {
-    list-style: none;
     display: none;
     position: absolute;
     top: 100%;
