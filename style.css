@@ -108,11 +108,8 @@ th{
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     font-size: 16px;
 }
 
@@ -129,13 +126,6 @@ th{
     transition: background-color 0.3s;
 }
 
-/* Hover Effect for nav items */
-.menu a:hover {
-    background-color: #f776a3;
-    color: #fff;
-}
-
-/* Dropdown Menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -145,6 +135,11 @@ th{
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
     z-index: 1;
+}
+
+.menu a:hover {
+    background-color: #f776a3;
+    color: #fff;
 }
 
 .dropdown-content li {
@@ -163,12 +158,10 @@ th{
     color: #fff;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Reset nav item color on mouse out */
 .menu a.reset {
     color: #891e3b;
 }
