@@ -1,13 +1,11 @@
 ///prompt function to receive name input
 function namePrompt(){
-    const inputName = prompt("Please enter your name: ");
-    displayName(inputName);
-}
-
-///prompt function to display text
-function displayName(){
-    const output = document.getElementById("name");
-    output.textContent = inputName ? `Hello, ${inputName}!` : "I'm not sure who you are :(";
+    let inputName = prompt("Please enter your name: ");
+    if (inputName) {
+        document.getElementById("name").textContent = "Hello, " + name + "!";
+    } else {
+        document.getElementById("name").textContent = "I don't know who you are! :(";
+    }
 }
 
 ///image size function to toggle enlargement
