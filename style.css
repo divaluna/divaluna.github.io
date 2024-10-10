@@ -120,7 +120,7 @@ th{
 }
 
 .dropdown-content {
-    list-style: none;
+    list-style: square;
     display: none;
     position:absolute;
     top: 100%;
