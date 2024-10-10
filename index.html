@@ -10,6 +10,25 @@
 
     <body>
         <h1>Diva Luna</h1>
+
+        <!-- navigation bar -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#edu" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Education</a></li>
+                <li class="dropdown">
+                    <a href="#crsdesc" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Course Descriptions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#sumCourses">Summer Courses 2024</a></li>
+                        <li><a href="#fallCourses">Fall Courses 2024</a></li>
+                    </ul>
+                </li>
+                <li><a href="#awards" onmouseover="resetColour(this)" onmouseout="resetColour(this)">Awards + Certifications</a></li>
+                <li><a href="#clubs" onmouseover="resetColour(this)" onmouseout="resetColour(this)">Extra-Curriculars</a></li>
+                <li><a href="#contact" onmouseover="resetColour(this)" onmouseout="resetColour(this)">Contact</a></li>
+            </ul>
+        </nav>
+        
         <nav>
             <a href="#edu">Education</a> |
             <a href="#crsdesc">Course Descriptions</a> |
@@ -17,8 +36,22 @@
             <a href="#clubs">Extra-Curriculars</a> |
             <a href="#contact">Contact</a>
         </nav>
+        <hr>
+
+        <!-- 1. name prompt -->
+        <button id="nameButton">Click me!</button>
+        <p id="name"></p>
+
+        <!-- 2. clickable image -->
+         <div class="clickable-image">
+            <img id="divaPhoto" src="/Users/diva/Downloads/diva.webp" alt="Diva Luna"/>
+         </div>
+
+        <script src="main.js"></script>
     
         <hr>
+
+        <!-- education information -->
         <section id="edu">
             <h2><u>Education</u></h2>
             <ol>
@@ -33,7 +66,8 @@
             </ol>
             <hr>
         </section>
-        
+
+        <!-- course description -->
         <section id="crsdesc">
             <h2><u>Course Descriptions</u></h2>
             <h3><b><i>Business Technology Management</i></b></h3>
@@ -41,7 +75,7 @@
 
             <table>
                 <tr>
-                    <th>summer semester courses</th>
+                    <th id ="sumCourses">summer semester courses</th>
                     <th>description</th>
                 </tr>
                 <tr>
@@ -60,7 +94,7 @@
             <br>
             <table>
                 <tr>
-                    <th>fall semester courses</th>
+                    <th id="fallCourses">fall semester courses</th>
                     <th>description</th>
                 </tr>
                 <tr>
@@ -92,6 +126,7 @@
             <hr>
         </section>
         
+        <!-- extra curriculars -->
         <section id="clubs">
             <h2><u>Extra-Curriculars</u></h2>
             <ol>
@@ -108,6 +143,7 @@
             <hr>
         </section>
 
+        <!-- contact link -->
         <section id="contact">
             <h4><u>Contact:</u> 
                 <a href="mailto:diva.luna@torontomu.ca">email me!</a>
