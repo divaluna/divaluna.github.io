@@ -109,6 +109,7 @@ th{
 }
 
 .menu {
+    list-style: none;
     display: flex;
     gap: 20px;
     font-size: 16px;
@@ -128,6 +129,7 @@ th{
 }
 
 .dropdown-content {
+    list-style: none;
     display: none;
     position: absolute;
     top: 100%;
