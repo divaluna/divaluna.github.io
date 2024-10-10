@@ -85,7 +85,7 @@ table,td,th,tr{
 }
 
 .clickable-image{
-    margin-top: 150px;
+    margin: flex;
 }
 
 #divaPhoto{
