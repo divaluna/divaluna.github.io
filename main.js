@@ -2,7 +2,7 @@
 function namePrompt(){
     let inputName = prompt("Please enter your name: ");
     if (inputName) {
-        document.getElementById("name").textContent = "Hello, " + name + "!";
+        document.getElementById("name").textContent = "Hello, " + inputName + "!";
     } else {
         document.getElementById("name").textContent = "I don't know who you are! :(";
     }
