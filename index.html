@@ -29,19 +29,19 @@
         </nav>
         
         <!-- form -->
-        <form id="myform">
+        <form id="myform"> 
+            <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
             <fieldset>
-                <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
                 
                 <legend>Basic information</legend>
                 <label for="fname">First name:</label><br>
                 <input id="fname" type="text" name=";name"><br>
 
                 <label for="lname">Last name:</label><br>
-                <input id="lname" type="text" name="lname">
+                <input id="lname" type="text" name="lname"><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email"><br>
 
                 <label for="experience">How many years of hiring experience do you have?:</label>
                 <select id="experience" name="experience">
@@ -65,7 +65,7 @@
             <fieldset>
                 <legend>Portfolio Website</legend>
                 
-                <p>Select all factors that should be on a portfolio website.</p>
+                <p>1. Select all factors that should be on a portfolio website.</p>
                 <input type="checkbox" id="factor1" name="factor1" value="Photos">
                 <label for="factor1">Photos</label><br>
                 <input type="checkbox" id="factor2" name="factor2" value="Education">
@@ -81,16 +81,16 @@
                 <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
                 <label for="factor7">Hobbies</label><br>
 
-                <label for="favcolor">Select the colour that would appeal the most on a portfolio website:</label>
+                <label for="favcolor">2. Select the colour that would appeal the most on a portfolio website:</label>
                 <input type="color" name="favcolor" id="favcolor">
 
-                <p>What is your expectation of a portfolio website from a suitable candidate?</p>
+                <p>3. What is your expectation of a portfolio website from a suitable candidate?</p>
                 <textarea name="description" rows="10" cols="30">
                 </textarea>
-
-            </fieldset>
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
+
+            </fieldset>
          </form>
 
         <!-- 1. name prompt -->
