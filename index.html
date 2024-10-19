@@ -11,8 +11,72 @@
     <body>
         <h1>Diva Luna</h1>
 
-        <!-- navigation bar -->
+        <!-- form -->
+         <form id="myform">
+            <fieldset>
+                <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
+                
+                <legend>Basic information</legend>
+                <label for="fname">First name:</label><br>
+                <input id="fname" type="text" name=";name"><br>
 
+                <label for="lname">Last name:</label><br>
+                <input id="lname" type="text" name="lname">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="experience">How many years of hiring experience do you have?:</label>
+                <select id="experience" name="experience">
+                    <option value="1year">Less than 1 year</option>
+                    <option value="1-3years">1-3 years</option>
+                    <option value="4-6years">4-6 years</option>
+                    <option value="6+years">6+ years</option>
+                </select>
+
+                <p>What is your job title or role within your organization?</p>
+                <input type="radio" id="manager" name="role" value="Manager">
+                <label for="manager">Manager</label><br>
+                <input type="radio" id="hr" name="role" value="Human Resources">
+                <label for="hr">Human Resources</label><br>
+                <input type="radio" id="recruitment" name="role" value="Recruitment">
+                <label for="recruitment">Recruitment</label><br>
+                <input type="radio" id="lead" name="role" value="Lead">
+                <label for="lead">Lead</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Portfolio Website</legend>
+                
+                <p>Select all factors that should be on a portfolio website.</p>
+                <input type="checkbox" id="factor1" name="factor1" value="Photos">
+                <label for="factor1">Photos</label><br>
+                <input type="checkbox" id="factor2" name="factor2" value="Education">
+                <label for="factor2">Education</label><br>
+                <input type="checkbox" id="factor3" name="factor3" value="Contact Info">
+                <label for="factor3">Contact Info</label><br>
+                <input type="checkbox" id="factor4" name="factor4" value="Chat Option">
+                <label for="factor4">Chat Option</label><br>
+                <input type="checkbox" id="factor5" name="factor5" value="Experience">
+                <label for="factor5">Experience</label><br>
+                <input type="checkbox" id="factor6" name="factor6" value="Awards">
+                <label for="factor6">Awards</label><br>
+                <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
+                <label for="factor7">Hobbies</label><br>
+
+                <label for="favcolor">Select the colour that would appeal the most on a portfolio website:</label>
+                <input type="color" name="favcolor" id="favcolor">
+
+                <p>What is your expectation of a portfolio website from a suitable candidate?</p>
+                <textarea name="description" rows="10" cols="30">
+                </textarea>
+
+            </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+         </form>
+
+        <!-- navigation bar -->
         <nav>
             <ul class="menu">
                 <li><a href="#edu" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Education</a></li>
