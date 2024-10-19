@@ -11,8 +11,25 @@
     <body>
         <h1>Diva Luna</h1>
 
+        <!-- navigation bar -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#edu" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Education</a></li>
+                <li class="dropdown">
+                    <a href="#crsdesc" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Course Descriptions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#sumCourses" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Summer Courses 2024</a></li>
+                        <li><a href="#fallCourses" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Fall Courses 2024</a></li>
+                    </ul>
+                </li>
+                <li><a href="#awards" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Awards + Certifications</a></li>
+                <li><a href="#clubs" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Extra-Curriculars</a></li>
+                <li><a href="mailto:diva.luna@torontomu.ca" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Contact</a></li>
+            </ul>
+        </nav>
+        
         <!-- form -->
-         <form id="myform">
+        <form id="myform">
             <fieldset>
                 <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
                 
@@ -75,24 +92,6 @@
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
          </form>
-
-        <!-- navigation bar -->
-        <nav>
-            <ul class="menu">
-                <li><a href="#edu" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Education</a></li>
-                <li class="dropdown">
-                    <a href="#crsdesc" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Course Descriptions</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#sumCourses" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Summer Courses 2024</a></li>
-                        <li><a href="#fallCourses" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Fall Courses 2024</a></li>
-                    </ul>
-                </li>
-                <li><a href="#awards" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Awards + Certifications</a></li>
-                <li><a href="#clubs" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Extra-Curriculars</a></li>
-                <li><a href="mailto:diva.luna@torontomu.ca" onmouseover="adjustColour(this)" onmouseout="resetColour(this)">Contact</a></li>
-            </ul>
-        </nav>
-        
 
         <!-- 1. name prompt -->
         <button id="nameButton">Click me to display your name!</button>
