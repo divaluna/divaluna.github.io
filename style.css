@@ -1,6 +1,6 @@
 body{
     font-size: 12;
-    background-color: #F4F0F3;
+    background-color: #c9c9c9;
     margin: 20pt;
 }
 
@@ -17,19 +17,19 @@ h1{
 }
 
 h2{
-    color: rgb(160, 40, 66);
+    color: rgb(61, 57, 57);
     font-size: 18;
     font-weight: bolder;
 }
 
 h3{
-    color: rgb(217, 125, 148);
+    color: rgb(241, 184, 184);
     font-size: 16;
     font-weight: bold;
 }
 
 h4{
-    color: rgb(242, 171, 193);
+    color: rgb(224, 176, 176);
     font-size: 14;
 }
 
@@ -40,28 +40,28 @@ p{
 }
 
 a{
-    color: #891e3b;
+    color: #613434;
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 a:hover {
-    color: #f9d5e2;
+    color: #eacbcb;
     background-color: #000;
     padding: 5px;
     border-radius: 5px;
 }
 
 a:active {
-    color: #f776a3;
-    background-color: #000;
+    color: #de7575;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     border-radius: 5px;
 }
 
 a:visited {
-    color: #f776a3;
+    color: #beacac;
     padding: 5px;
     border-radius: 5px;
     text-decoration: underline;
@@ -93,7 +93,7 @@ table{
 }
 
 th{
-    background-color: #f4b3ca;
+    background-color: rgba(133, 117, 117, 0.8);
 }
 
 .menu {
@@ -112,7 +112,7 @@ th{
 
 .menu a {
     text-decoration: none;
-    color: #891e3b;
+    color: #3a3436;
     padding: 10px 15px;
     background-color: #f4f0f3;
     border-radius: 5px;
@@ -131,8 +131,8 @@ th{
 }
 
 .menu a:hover {
-    background-color: #f776a3;
-    color: #fff;
+    color: #eacbcb;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 .dropdown-content li {
@@ -143,12 +143,12 @@ th{
     padding: 10px;
     display: block;
     background-color: #f4f0f3;
-    color: #891e3b;
+    color: #4e2929;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #f776a3;
+    background-color: #d76767;
     color: #fff;
 }
 
@@ -157,77 +157,108 @@ th{
 }
 
 .menu a.reset {
-    color: #891e3b;
+    color: #3a3436;
 }
 
-form{
+form {
     background: white;
     padding: 3em;
+    height: 320px;
     border-radius: 15px;
     border-left: 1px solid white;
     border-top: 1px solid white;
     backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     text-align: left;
     position: relative;
     transition: all 0.2s ease-in-out;
-}
-
-input{
-    background: transparent;
-    width: 200px;
-    padding: 1em;
-    margin-bottom: 2em;
-    border: none;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    border-radius: 5000px;
-    backdrop-filter: blur(5px);
-    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
-    color: #fff;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-.input:hover{
-    background: rgba(255,255,255,0.1);
-    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-}
-
-&[type="email"],
-&[type="password"] {
-      
-      &:focus {
-        background: rgba(255,255,255,0.1);
-        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-      }
+    
+    p {
+      font-weight: 500;
+      color: black;
+      opacity: 0.7;
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 60px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     }
     
-    &[type="button"] {
-      margin-top: 10px;
-      width: 150px;
-      font-size: 1rem;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
       
       &:hover {
-        cursor: pointer;
+        text-shadow: 2px 2px 6px #00000040;
       }
       
       &:active {
-        background: rgba(255,255,255,0.2);
+        text-shadow: none;
       }
     }
-  
-  &:hover {
-    margin: 4px;
+    
+    input {
+      background: transparent;
+      width: 200px;
+      padding: 1em;
+      margin-bottom: 2em;
+      border: none;
+      border-left: 1px solid white;
+      border-top: 1px solid white;
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+      color: black;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      
+      &:hover {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+      }
+      
+      &[type="fname"],
+      &[type="lname"],
+      &[type="email"] {
+        
+        &:focus {
+          background: rgba(255,255,255,0.1);
+          box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+        }
+      }
+      
+      &[type="button"] {
+        margin-top: 10px;
+        width: 150px;
+        font-size: 1rem;
+        
+        &:hover {
+          cursor: pointer;
+        }
+        
+        &:active {
+          background: rgba(255,255,255,0.2);
+        }
+      }
+    }
+    
+    &:hover {
+      margin: 4px;
+    }
   }
-
-::placeholder {
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-}
-
-
-
+  
+  ::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+  
+  a,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
