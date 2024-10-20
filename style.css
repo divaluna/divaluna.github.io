@@ -23,13 +23,13 @@ h2{
 }
 
 h3{
-    color: rgb(241, 184, 184);
+    color: rgb(162, 95, 95);
     font-size: 16;
     font-weight: bold;
 }
 
 h4{
-    color: rgb(224, 176, 176);
+    color: rgb(205, 108, 108);
     font-size: 14;
 }
 
@@ -112,7 +112,7 @@ th{
 
 .menu a {
     text-decoration: none;
-    color: #3a3436;
+    color: #3a3434;
     padding: 10px 15px;
     background-color: #f4f0f3;
     border-radius: 5px;
@@ -148,7 +148,7 @@ th{
 }
 
 .dropdown-content a:hover {
-    background-color: #d76767;
+    background-color: rgba(208, 85, 85, 0.4);
     color: #fff;
 }
 
@@ -163,7 +163,6 @@ th{
 form {
     background: white;
     padding: 3em;
-    height: 320px;
     border-radius: 15px;
     border-left: 1px solid white;
     border-top: 1px solid white;
@@ -171,7 +170,6 @@ form {
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     text-align: left;
     position: relative;
-    transition: all 0.2s ease-in-out;
     
     p {
       font-weight: 500;
@@ -210,7 +208,6 @@ form {
       box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
       color: black;
       font-weight: 500;
-      transition: all 0.2s ease-in-out;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
       
       &:hover {
