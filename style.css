@@ -162,15 +162,21 @@ th{
 
 form {
     background-color: #c9c9c9;
+    border-color: #3a3434;
     border-radius: 20px;
+    border-width: 2px;
 }
 
 input{
     background-color: #fff;
     color: #3a3434;
     border-radius: 20px;
+
+    
 }
 
 button{
     background-color: rgba(133, 117, 117, 0.8);
+    font-size: 14pt;
+    font-weight: 200;
 }
