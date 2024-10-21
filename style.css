@@ -123,7 +123,7 @@ th{
     list-style: square;
     display: none;
     position:absolute;
-    top: 140%;
+    top: 150%;
     background-color: rgba(255, 255, 255, 0.6);
     min-width: 160px;
     border-radius: 5px;
