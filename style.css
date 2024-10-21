@@ -40,21 +40,21 @@ p{
 }
 
 a{
-    color: #613434;
+    color: #312222;
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 a:hover {
-    color: #eacbcb;
+    color: #dbd0d0;
     background-color: #000;
     padding: 5px;
     border-radius: 5px;
 }
 
 a:active {
-    color: #de7575;
+    color: #c48a8a;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     border-radius: 5px;
@@ -123,9 +123,10 @@ th{
     list-style: square;
     display: none;
     position:absolute;
-    top: 100%;
+    top: 90%;
     background-color: rgba(255, 255, 255, 0.6);
     min-width: 160px;
+    border-radius: 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
@@ -140,8 +141,10 @@ th{
 }
 
 .dropdown-content a {
-    padding: 10px;
+    padding: 8px;
+    padding-right: 5px;
     display: block;
+    border-radius: 5px;
     background-color: #f4f0f3;
     color: #4e2929;
     text-decoration: none;
