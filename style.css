@@ -172,12 +172,14 @@ form {
     padding: 3em;
     border-color: #3a3434;
     border-width: 4px;
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     border-radius: 20px;
     border-width: 2px;
 
     input{
     background-color: #fff;
     color: #3a3434;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
     margin-bottom: 5px;
     font-size: 12px;
@@ -192,18 +194,18 @@ form {
     &[type="reset"] {
         background-color: rgba(133, 117, 117, 0.8);
         font-weight: 200;
+
         color: #000;
     }
 
+    }
     legend{
         font-size: 13px;
         font-weight: 600;
         margin-top: 7px;
     }
-    }
 
     label{
-    font-weight: 700;
-    font-size: 12px;
+    font-size: 12;
     }
 }
