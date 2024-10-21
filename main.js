@@ -24,12 +24,12 @@ divaPhoto.addEventListener("click",imageSize);
 
 ///adjust colour on mouse over
 function adjustColour(item) {
-    item.style.backgroundColor = "#f776a3";
+    item.style.backgroundColor = "#857575cc";
     item.style.color = "#fff";
 }
 
 ///adjust colour on mouse off
 function resetColour(item) {
-    item.style.backgroundColor = "#f4f0f3";
-    item.style.color = "#891e3b";
+    item.style.backgroundColor = "#ffffff99";
+    item.style.color = "#3a3434";
 }
