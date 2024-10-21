@@ -123,7 +123,7 @@ th{
     list-style: square;
     display: none;
     position:absolute;
-    top: 120%;
+    top: 130%;
     background-color: rgba(255, 255, 255, 0.6);
     min-width: 160px;
     border-radius: 5px;
@@ -142,10 +142,10 @@ th{
 
 .dropdown-content a {
     padding: 8px;
-    margin-right: 5px;
+    margin-right: 3px;
     display: block;
     border-radius: 5px;
-    background-color: #f4f0f3;
+    background-color: rgba(255, 255, 255, 0.6);
     color: #4e2929;
     text-decoration: none;
 }
