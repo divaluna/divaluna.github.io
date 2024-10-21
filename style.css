@@ -181,7 +181,7 @@ form input {
     padding: 0.5em;
 }
 
-form input [type="color"]{
+form input[type="color"]{
     width: 60px; 
     height: 30px;
     border-radius: 15px; 
