@@ -1,8 +1,5 @@
 window.onload = function() {
 
-    //check local storage support
-    if (localStorage) {
-  
         //event listener for submit
         document.getElementById('myform').addEventListener('submit', function() {
             //save first name
@@ -52,5 +49,4 @@ window.onload = function() {
   
     }
   
-  }
   
