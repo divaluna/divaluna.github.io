@@ -172,9 +172,10 @@ form {
     padding: 3em;
     border-color: #3a3434;
     border-width: 4px;
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    box-shadow: 15px 15px 35px -6px rgba(0,0,0,0.2);
     border-radius: 20px;
     border-width: 2px;
+    margin-bottom: 10px;
 
     input{
     background-color: #fff;
@@ -194,15 +195,14 @@ form {
     &[type="reset"] {
         background-color: rgba(133, 117, 117, 0.8);
         font-weight: 200;
-
         color: #000;
     }
 
     }
     legend{
-        font-size: 13px;
+        font-size: 13;
         font-weight: 600;
-        margin-top: 7px;
+        margin-top: 10px;
     }
 
     label{
