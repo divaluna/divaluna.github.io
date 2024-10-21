@@ -183,12 +183,10 @@ form input {
 
 form input[type="color"]{
     width: 60px; 
-    height: 30px;
+    height: 20px;
     border-radius: 15px; 
-    border: none; 
+    border:rgba(0, 0, 0, 0.8);
     padding: 0; 
-    cursor: pointer; 
-    outline: none; 
 }
 
 form input[type="text"],
