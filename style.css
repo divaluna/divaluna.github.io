@@ -193,6 +193,7 @@ form {
     &[type="button"]{
         background-color: rgba(133, 117, 117, 0.8);
         font-weight: 600;
+        width:fit-content;
         border-color: #808080;
         color: #000;
         font-size: 15;
