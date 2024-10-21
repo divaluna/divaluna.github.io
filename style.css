@@ -162,7 +162,7 @@ th{
 
 button{
     background-color: rgba(133, 117, 117, 0.8);
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 200;
     border-radius: 20px;
     }
@@ -178,10 +178,23 @@ form {
     background-color: #fff;
     color: #3a3434;
     border-radius: 20px;
+    margin-bottom: 5px;
+    font-size: 12px;
+
+    &[type="text"],
+    &[type="email"] {
+        border-color: #000;
+    }
+
+    &[type="button"]{
+        background-color: rgba(133, 117, 117, 0.8);
+        font-weight: 200;
+    }
 
     }
 
     label{
     font-weight: 400;
+    font-size: 13px;
     }
 }
