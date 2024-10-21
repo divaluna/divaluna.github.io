@@ -187,7 +187,7 @@ form input[type="color"]{
     width: 60px; 
     height: 30px;
     border-color: #3a3434;
-    padding: 0.5em; 
+    padding: 5px; 
     border-radius: 5px;
 }
 
