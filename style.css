@@ -160,6 +160,7 @@ button {
     background-color: rgba(133, 117, 117, 0.8);
     font-size: 13px;
     font-weight: 200;
+    border-radius: 20px;
 }
 
 form {
@@ -182,11 +183,10 @@ form input {
 }
 
 form input[type="color"]{
-    appearance: none;
     width: 60px; 
-    background-color: transparent;
     height: 20px;
-    border:none;
+    border:rgba(0, 0, 0, 0.8);
+    padding: 0; 
 }
 
 form input[type="text"],
