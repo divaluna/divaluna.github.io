@@ -160,8 +160,16 @@ th{
     color: #3a3436;
 }
 
+button{
+    background-color: rgba(133, 117, 117, 0.8);
+    font-size: 14pt;
+    font-weight: 200;
+    border-radius: 20px;
+    }
+
 form {
     background-color: #c9c9c9;
+    padding: 3em;
     border-color: #3a3434;
     border-radius: 20px;
     border-width: 2px;
@@ -175,12 +183,5 @@ form {
 
     label{
     font-weight: 400;
-    }
-
-    button{
-    background-color: rgba(133, 117, 117, 0.8);
-    font-size: 14pt;
-    font-weight: 200;
-    border-radius: 20px;
     }
 }
