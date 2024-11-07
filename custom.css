@@ -1,0 +1,187 @@
+
+/* General styles */
+body {
+    background-color: #efefef; /* Light gray background */
+  }
+
+@font-face {
+  font-family: 'Helvetica Neue 83 Extended';
+  src: url('Helvetica Neue LT Std 83 Heavy Extended.otf');
+}
+  
+  .cover-image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 35px; /* Rounded corners for the image */
+    position: absolute; /* Make the image sit behind the text */
+    object-fit: cover;
+    top: 1;
+    bottom: 5;
+    left: 2px;
+    right: 2px;
+    z-index: -1;
+}
+
+.custom-margin{
+    margin-top: 3rem;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent white */
+    height: auto;
+    width: auto;
+    margin-top: 40px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+  .easter-egg{
+    background: rgba(255, 255, 255, 0.05);
+    height: 100px;
+    width: 150px;
+    margin-top: 418px;
+    font-size: 50px;
+    color: #343434ae;
+    margin-left: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .easter-egg:hover{
+    background-color: #34343450;
+    color: rgba(255, 255, 255, 0.492);
+    border-color: #34343450;
+    box-shadow: 0 0 8px #34343450; /* Glowing effect */
+  }
+
+  .infobox{
+    background-color: #cabdbd;
+    color:#342f2f;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  /* Name Title */
+  .diva {
+    font-family:'Bertholdr Mainzer Fraktur', sans-serif;
+    font-size: 11rem;
+    color: #34343450;
+    line-height: 0.8;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .luna {
+    font-family:'Bertholdr Mainzer Fraktur', sans-serif;
+    font-size: 11rem;
+    color: #343434ae;
+    line-height: 0.8;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  /* Titles and Subtitles */
+  .title {
+    font-family: 'Helvetica Neue 83 Extended';
+    font-weight: 600;
+    color: #342f2f;
+    font-size: 1.30rem;
+    line-height: 1;
+  }
+  
+  .subtitle {
+    font-weight: 500;
+    color: #8a6e6e8f;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  h1{
+  font-family: 'Helvetica Neue 83 Extended';
+  font-size: 60px;
+  }
+
+  .accent{
+    background: -webkit-linear-gradient(60deg,#cabdbd, #8A6E6E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ac9999, 0 0 40px #ac9999, 0 0 50px #ac9999, 0 0 60px #ac9999, 0 0 70px #ac9999;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ac9999, 0 0 50px #ac9999, 0 0 60px #ac9999, 0 0 70px #ac9999, 0 0 80px #ac9999;
+    }
+  }
+
+.bg-custom {
+    background-color: #efefef;
+}
+
+/* Match the dropdown menu width to the nav link */
+.nav-item.dropdown .dropdown-menu {
+    min-width: 100%;
+    border: 1px solid #8A6E6E;
+  }
+  
+  /* Adjust padding inside dropdown items to match nav items */
+  .nav-item.dropdown .dropdown-item {
+    color:#8A6E6E;
+  }
+  
+  /* Hover effect for dropdown items */
+  .nav-item.dropdown .dropdown-item:hover {
+    background-color: #8a6e6e2d; /* Optional: subtle background change on hover */
+  }
+
+.navbar-brand {
+    font-family:'Bertholdr Mainzer Fraktur', sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+    }
+
+/* Add outline to non-active pills */
+.nav-pills .nav-link {
+    color:#8A6E6E;
+    padding: 0.3rem 0.7rem;
+    border: 1.25px solid #8A6E6E; /* Thin outline color */
+    border-radius: 15px;
+    margin: 4px;
+  }
+  
+  .nav-pills .nav-link.active {
+    border: none; /* Remove outline for the active item */
+    background-color: #8A6E6E; /* Default active color */
+    color: white;
+  }
+
+  .nav-pills .nav-link:hover {
+    border-color: #8A6E6E; /* Border color on hover */
+    box-shadow: 0 0 8px #8A6E6E; /* Glowing effect */
+  }
+  .nav-pills .nav-link:focus {
+    border-color: #8A6E6E; /* Border color on hover */
+    background-color: #8A6E6E; /* Default active color */
+    color: white;
+    box-shadow: 0 0 8px #8A6E6E; /* Glowing effect */
+  }

@@ -3,9 +3,9 @@ window.onload = function() {
     function namePrompt(){
         let inputName = prompt("Please enter your name: ");
         if (inputName) {
-            document.getElementById("name").textContent = "Hello, " + inputName + "!";
+            alert("Hello, " + inputName + "!");
         } else {
-            document.getElementById("name").textContent = "I don't know who you are! :(";
+            alert("Oh, I don't know your name... :(");
         }
     }
 
@@ -16,22 +16,10 @@ window.onload = function() {
     }
 
     ///event listener for button
-    const button = document.getElementById("nameButton");
+    const button = document.getElementById("eggButton");
     button.addEventListener("click", namePrompt);
 
     ///event listener for photo
     const divaPhoto = document.getElementById("divaPhoto");
     divaPhoto.addEventListener("click",imageSize);
-
-    ///adjust colour on mouse over
-    function adjustColour(item) {
-        item.style.backgroundColor = "#857575cc";
-       item.style.color = "#fff";
-    }
-
-    ///adjust colour on mouse off
-    function resetColour(item) {
-        item.style.backgroundColor = "#ffffff99";
-        item.style.color = "#3a3434";
-    }
 }
