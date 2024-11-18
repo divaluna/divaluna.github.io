@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <title>Diva Luna</title>
+        <!---<link rel="stylesheet" href="style.css">-->
+        <link href="https://fonts.cdnfonts.com/css/bertholdr-mainzer-fraktur" rel="stylesheet">
+                
+    </head>
+
+    <body>
+    <!-- navigation bar -->
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg bg-custom fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Diva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item"></li>
+                  <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">2022/23</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">2023/24</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">2024/25</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"></li>
+                  <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto nav-pills">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Accessibility
+                  </a>
+                  <ul class="dropdown-menu">
+  
+                    <li>
+                      <button id="highContrast" class="dropdown-item">Contrast Filter</button>
+                    </li>
+                    <li>
+                      <button id="colorblind" class="dropdown-item">Colorblind</button>
+                    </li>
+  
+                  </ul>
+                </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" target="_blank" href="www.linkedin.com/in/dvhdla">LinkedIn</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/dvhdla/">Instagram</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mailto: deevs1110@gmail.com">Email</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+    </section>
+
+     <!-- form -->
+     <section id="form">
+      <h2><u>Portfolio Website Info Form</u></h2>
+      <form id="myform"> 
+          <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
+          <fieldset>
+              
+              <legend>Basic Information</legend>
+              <label for="fname">First name:</label><br>
+              <input id="fname" type="text" name="fname"><br>
+
+              <label for="lname">Last name:</label><br>
+              <input id="lname" type="text" name="lname"><br>
+
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+
+              <label for="experience">How many years of hiring experience do you have?:</label>
+              <select id="experience" name="experience">
+                  <option value="1year">Less than 1 year</option>
+                  <option value="1-3years">1-3 years</option>
+                  <option value="4-6years">4-6 years</option>
+                  <option value="6+years">6+ years</option>
+              </select>
+
+              <p>What is your job title or role within your organization?</p>
+              <input type="radio" id="manager" name="role" value="Manager">
+              <label for="manager">Manager</label><br>
+              <input type="radio" id="hr" name="role" value="Human Resources">
+              <label for="hr">Human Resources</label><br>
+              <input type="radio" id="recruitment" name="role" value="Recruitment">
+              <label for="recruitment">Recruitment</label><br>
+              <input type="radio" id="lead" name="role" value="Lead">
+              <label for="lead">Lead</label><br>
+          </fieldset>
+
+          <fieldset>
+              <legend>Portfolio Website</legend>
+              
+              <p>1. Select all factors that should be on a portfolio website.</p>
+              <input type="checkbox" id="factor1" name="factor1" value="Photos">
+              <label for="factor1">Photos</label><br>
+              <input type="checkbox" id="factor2" name="factor2" value="Education">
+              <label for="factor2">Education</label><br>
+              <input type="checkbox" id="factor3" name="factor3" value="Contact Info">
+              <label for="factor3">Contact Info</label><br>
+              <input type="checkbox" id="factor4" name="factor4" value="Chat Option">
+              <label for="factor4">Chat Option</label><br>
+              <input type="checkbox" id="factor5" name="factor5" value="Experience">
+              <label for="factor5">Experience</label><br>
+              <input type="checkbox" id="factor6" name="factor6" value="Awards">
+              <label for="factor6">Awards</label><br>
+              <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
+              <label for="factor7">Hobbies</label><br>
+
+              <label for="favcolor">2. Select the colour that would appeal the most on a portfolio website:</label>
+              <input type="color" name="favcolor" id="favcolor" value="#000">
+
+              <p>3. What is your expectation of a portfolio website from a suitable candidate?</p>
+              <textarea name="description" rows="10" cols="30">Text here...</textarea><br>
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+
+          </fieldset>
+       </form>
+      </section>
+    </body>
+
+    <footer class="py-2">
+      <div class="container-fluid d-flex justify-content-between">
+          <!-- Name in the bottom-left -->
+          <span class="navbar-brand">Diva</span>
+    
+          <!-- Social Media Icons in the center -->
+          <div class="social-icons text-center">
+              <a href="https://linkedin.com/in/dvhdla" target="_blank" class="nav-link mx-2">
+                  <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://instagram.com/dvhdla" target="_blank" class="nav-link mx-2">
+                  <i class="bi bi-instagram"></i>
+              </a>
+              <a href="mailto:deevs1110@gmail.com" class="nav-link mx-2">
+                  <i class="bi bi-envelope-fill"></i>
+              </a>
+          </div>
+      </div>
+    </footer>
+
+    <meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+</html>

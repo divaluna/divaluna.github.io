@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="custom.css">
         <title>Diva Luna</title>
         <!---<link rel="stylesheet" href="style.css">-->
@@ -25,16 +26,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
+                <a class="nav-link" href="experience.html">Experience</a>
               </li>
               <li class="nav-item"></li>
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="education.html">Education</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Courses
                 </a>
                 <ul class="dropdown-menu">
@@ -46,18 +44,36 @@
                 </ul>
               </li>
               <li class="nav-item"></li>
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto nav-pills">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accessibility
+                </a>
+                <ul class="dropdown-menu">
+
+                  <li>
+                    <button id="highContrast" class="dropdown-item">Contrast Filter</button>
+                  </li>
+                  <li>
+                    <button id="colorblind" class="dropdown-item">Colorblind</button>
+                  </li>
+                  <li>
+                    <button id="largeText" class="dropdown-item">Enlarge Text</button>
+                  </li>
+
+                </ul>
+              </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Contact
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="www.linkedin.com/in/dvhdla">LinkedIn</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="www.linkedin.com/in/dvhdla">LinkedIn</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="https://www.instagram.com/dvhdla/">Instagram</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/dvhdla/">Instagram</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="mailto: deevs1110@gmail.com">Email</a></li>
                     </ul>
@@ -70,17 +86,19 @@
     </section>
 
     <section id="homepage">
+      <h1 id="one" class="star">＊</h1>
+      <h1 id="two" class="star">＊</h1>
+      <h1 id="three" class="star">＊</h1>
       <div class="container" style="margin-left:0">
         <div class="row" style="margin-top: 90px;">
             <img src="cover.jpg" alt="diva on film" class="img-fluid w-100 cover-image">
         </div>
-
         </div>
 
       <div class="container my-4 ">
         <div class="row">
         <div class="col"> 
-            <button id="eggButton" class="btn btn-light easter-egg">!!!</button> 
+            <button id="eggButton" class="btn btn-light easter-egg" onclick="namePrompt()">!!!</button> 
         </div>
     
           <!-- Right Column: Name and Title -->
@@ -106,199 +124,123 @@
             <h1>
                 <span>hello! i'm </span> <span class="accent">diva.</span>
             </h1>
+            <h5> I am a third year Business Technology Management student at TMU. I have a passion for creativity, art, and teaching.<br>Outside of work and school, I have a lot of independent projects, feel free to check some out:</h5>
         </div>
         <div class="row g-2">
             <div class="col">
-                <div class="infobox"></div>
+                <div id="design" class="infobox">
+                    <a class="btn btn-light glass-container-small" href="portfolio.html">
+                        <h2>graphic design</h2>
+                    </a>
+                </div>
             </div>
 
             <div class="col">
-                <div class="infobox"></div>
+                <div id="youtube" class="infobox">
+                  <a class="btn btn-light glass-container-small" target="_blank" href="https://www.youtube.com/@divaa0">
+                    <h2>youtube</h2>
+                  </a>
+                </div>
             </div>
 
             <div class="col">
-                <div class="infobox"></div>
+                <div id="medium" class="infobox">
+                  <a class="btn btn-light glass-container-small" target="_blank" href="https://medium.com/@deevs1110">
+                    <h2>write</h2>
+                  </a>
+                </div>
             </div>
 
             <div class="col">
-                <div class="infobox"></div>
+                <div id="tech" class="infobox">
+                  <a class="btn btn-light glass-container-small" href="portfolio.html">
+                    <h2>tech projects</h2>
+                  </a>
             </div>
         </div>
+
     </div>
 </section>
 
+<section id="funfact">
+  <div class="container-fluid">
+    <div class="row">
+      <h1>
+          <span>want to hear some </span> <span class="accent">fun facts?</span>
+      </h1>
+      <h5>1. I learned to use Garageband to teach sessions at work, I remade 'Flashing Lights' by ear to practice!</h5>
+      <div class="row">
+        <div class="col-9">
+      <figure><video id="movie">
+        <source src="garageband.mp4" type="video/mp4"/>
+      </video>
+      <figcaption style="width: 780px">Screen recording of Garageband from my iPad.</figcaption>
+    </figure>
+      <script src="video.js"></script>
+    </div>
+      <div class="col-3">
+        <button class="btn btn-light video-button" onclick="playPause()"><h1>⏯</h1>play</button><br>
+        <button class="btn btn-light video-button" onclick="lowerVolume()"><h1>-</h1>lower</button><br>
+        <button class="btn btn-light video-button" onclick="higherVolume()"><h1>+</h1>higher</button>
+        </div>
+      <div class="row">
+        <div class="col">
+          <figure>
+            <h5> 2. I love taking photos! I use a lot of expired film from other countries.</h5>
+          <div id="photo1" class="photobox"></div>
+          <figcaption>Taken on May 9, 2024 in Greenwood Station.</figcaption>
+          <button class="btn alt-button" onclick="alert('Hands holding a film camera with an open film compartment showing a red film roll inside of the TTC train.')">Click here for alt text.</button>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <h5> 3. My first musical was 'Jesus Christ Superstar'.</h5>
+          <div id="photo2" class="photobox"></div>
+          <figcaption>Taken on May 8, 2024 at the CAA Ed Mirvish Theatre.</figcaption>
+          <button class="btn alt-button" onclick="alert('Diva in a blue denim jacket walking up small steps in the CAA Ed Mirvish Theatre.')">Click here for alt text.</button>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <h5> 4. I collect small Shrek figurines, both I got by chance from coworkers.</h5>
+          <div id="photo3" class="photobox"></div>
+          <figcaption>Taken on November 14, 2024, in Oshawa.</figcaption>
+          <button class="btn alt-button" onclick="alert('Two shrek figurines on a black stand in front of a wall.')">Click here for alt text.</button>
+        </figure>
+        </div>
+      
+  </div>
+  </div>
+  </div>
+</section>
 
-        
-
-        <!-- education information -->
-        <section id="edu">
-            <h2><u>Education</u></h2>
-            <ol>
-                <li><b>Mary Ward Catholic Secondary School</b></li>
-                <ul>
-                    <li><i>September 2017 - August 2021</i></li>
-                </ul>
-                <li><b>Toronto Metropolitan University</b></li>
-                    <ul>
-                        <li><i>September 2022 - Present</i></li>
-                    </ul>
-            </ol>
-            <hr>
-        </section>
-
-        <!-- course description -->
-        <section id="crsdesc">
-            <h2><u>Course Descriptions</u></h2>
-            <h3><b><i>Business Technology Management</i></b></h3>
-            <p>BTM focuses on combining business courses with information technology in order to provide both aspects to students looking to explore paths in the technology industry. Each semester has given me the opportunity to not only learn the essentials of business and IT, but also to try new courses and to see what will be most useful to me.</p>
-
-            <table>
-                <tr>
-                    <th id ="sumCourses">summer semester courses</th>
-                    <th>description</th>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/law/LAW/122/" target="_blank">LAW122: Business Law</a></td>
-                    <td>An introductory course that acts as a prerequisite to further studies of law; examines law in Canada and how it applies to businesses.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/english/ENG/510/" target="_blank">ENG510: Gothic Horror</a></td>
-                    <td>A course that analyzes the components of gothic horror and how it exists in popular culture.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/820/" target="_blank">ITM820: Information System Security & Privacy</a></td>
-                    <td>A course that examines the technical, operational, and managerial issues of computer and network security in an operational environment.</td>
-                </tr>
-            </table>
-            <br>
-            <table>
-                <tr>
-                    <th id="fallCourses">fall semester courses</th>
-                    <th>description</th>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/780/" target="_blank">ITM780: Web Design & Management</a></td>
-                    <td>An introductory course to web design that provides the fundamentals to HTML5 and CSS3.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/415/" target="_blank">ITM415: Business Process Management</a></td>
-                    <td>A course that introduces modelling, analyzing, and redesigning business process in order to meet target values.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/english/ENG/505/" target="_blank">ENG505: Creative Writing</a></td>
-                    <td>An upper year course to build the fundamentals of good writing and developing creative writing abilities.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/finance/FIN/300/" target="_blank">FIN300: Managerial Finance I</a></td>
-                    <td>An introductory course to major finance concepts like asset valuation, risk assessment, investing. and budgeting.</td>
-                </tr>
-            </table>
-        </section>
-        <hr>
-
-        <section id="awards">
-            <h2><u>Educational Awards + Certifications</u></h2>
-            <h3> Toronto Metropolitan University </h3>
-            <ul>
-                <li>Ted Rogers Badge: Python</li>
-                <li>Ted Rogers Badge: SQL</li>
-            </ul>
-            <hr>
-        </section>
-        
-        <!-- extra curriculars -->
-        <section id="clubs">
-            <h2><u>Extra-Curriculars</u></h2>
-            <ol>
-                <li><b>Ted Rogers Student Society</b></li>
-                <ul>
-                    <li>Website Designer - Marketing Committee</li>
-                </ul>
-                <li><b>Practical Applications of Computer Science (PACS)</b></li>
-                <ul>
-                    <li>TRSM Representative - Representatives</li>
-                    <li>Graphic Designer - Communications Committee</li>
-                </ul>
-            </ol>
-            <hr>
-        </section>
-
-        <!-- form -->
-        <section id="form">
-            <h2><u>Portfolio Website Info Form</u></h2>
-            <form id="myform"> 
-                <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
-                <fieldset>
-                    
-                    <legend>Basic Information</legend>
-                    <label for="fname">First name:</label><br>
-                    <input id="fname" type="text" name="fname"><br>
-    
-                    <label for="lname">Last name:</label><br>
-                    <input id="lname" type="text" name="lname"><br>
-    
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
-    
-                    <label for="experience">How many years of hiring experience do you have?:</label>
-                    <select id="experience" name="experience">
-                        <option value="1year">Less than 1 year</option>
-                        <option value="1-3years">1-3 years</option>
-                        <option value="4-6years">4-6 years</option>
-                        <option value="6+years">6+ years</option>
-                    </select>
-    
-                    <p>What is your job title or role within your organization?</p>
-                    <input type="radio" id="manager" name="role" value="Manager">
-                    <label for="manager">Manager</label><br>
-                    <input type="radio" id="hr" name="role" value="Human Resources">
-                    <label for="hr">Human Resources</label><br>
-                    <input type="radio" id="recruitment" name="role" value="Recruitment">
-                    <label for="recruitment">Recruitment</label><br>
-                    <input type="radio" id="lead" name="role" value="Lead">
-                    <label for="lead">Lead</label><br>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Portfolio Website</legend>
-                    
-                    <p>1. Select all factors that should be on a portfolio website.</p>
-                    <input type="checkbox" id="factor1" name="factor1" value="Photos">
-                    <label for="factor1">Photos</label><br>
-                    <input type="checkbox" id="factor2" name="factor2" value="Education">
-                    <label for="factor2">Education</label><br>
-                    <input type="checkbox" id="factor3" name="factor3" value="Contact Info">
-                    <label for="factor3">Contact Info</label><br>
-                    <input type="checkbox" id="factor4" name="factor4" value="Chat Option">
-                    <label for="factor4">Chat Option</label><br>
-                    <input type="checkbox" id="factor5" name="factor5" value="Experience">
-                    <label for="factor5">Experience</label><br>
-                    <input type="checkbox" id="factor6" name="factor6" value="Awards">
-                    <label for="factor6">Awards</label><br>
-                    <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
-                    <label for="factor7">Hobbies</label><br>
-    
-                    <label for="favcolor">2. Select the colour that would appeal the most on a portfolio website:</label>
-                    <input type="color" name="favcolor" id="favcolor" value="#000">
-    
-                    <p>3. What is your expectation of a portfolio website from a suitable candidate?</p>
-                    <textarea name="description" rows="10" cols="30">Text here...</textarea><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-    
-                </fieldset>
-             </form>
-            </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-        <script src="form.js"></script>
+
+    <script src="form.js"></script>
 </body>
 
 
     
-    <footer>
-    </footer>
+<footer class="py-2">
+  <div class="container-fluid d-flex justify-content-between">
+      <!-- Name in the bottom-left -->
+      <span class="navbar-brand">Diva</span>
+
+      <!-- Social Media Icons in the center -->
+      <div class="social-icons text-center">
+          <a href="https://linkedin.com/in/dvhdla" target="_blank" class="nav-link mx-2">
+              <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/dvhdla" target="_blank" class="nav-link mx-2">
+              <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:deevs1110@gmail.com" class="nav-link mx-2">
+              <i class="bi bi-envelope-fill"></i>
+          </a>
+      </div>
+  </div>
+</footer>
 
 <meta http-equiv='cache-control' content='no-cache'> 
 <meta http-equiv='expires' content='0'> 
