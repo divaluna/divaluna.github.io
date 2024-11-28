@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="custom.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <title>Diva Luna</title>
-        <!---<link rel="stylesheet" href="style.css">-->
-        <link href="https://fonts.cdnfonts.com/css/bertholdr-mainzer-fraktur" rel="stylesheet">
-                
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>Diva Luna</title>
+    <link href="https://fonts.cdnfonts.com/css/bertholdr-mainzer-fraktur" rel="stylesheet">
+            
+</head>
 
     <body>
     <!-- navigation bar -->
@@ -46,6 +45,9 @@
                 <li class="nav-item"></li>
                   <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
                 </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="seo.html">SEO Techniques</a>
+              </li>
               </ul>
               <ul class="navbar-nav ms-auto nav-pills">
                 <li class="nav-item dropdown">
@@ -57,8 +59,13 @@
                     <li>
                       <button id="highContrast" class="dropdown-item">Contrast Filter</button>
                     </li>
+                    <li><hr class="dropdown-divider"></li>
                     <li>
                       <button id="colorblind" class="dropdown-item">Colorblind</button>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <button id="largeText" class="dropdown-item">Enlarge Text</button>
                     </li>
   
                   </ul>
@@ -79,6 +86,55 @@
             </div>
           </div>
         </nav>
+
+    </section>
+
+    <section id="portfolio">
+      <h1>portfolio</h1>
+      <h5>graphic design</h5>
+      <h5>writing</h5>
+      <h5>tech projects</h5>
+      <img src="stickynote.svg" style="margin-left: 300pt; margin-top: -160pt; transform: scale(0.9);">
+      <img src="stickynote2.svg" style="margin-left: 600pt; margin-top: -190pt; transform: scale(0.8);">
+      <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div id="file1" class="container-fluid fileholder">
+            <button class="btn filename middle" onclick="moveUp(event)">cow man</button>
+            <img class="btn img-fluid portfolio_image" src="cowman.png">
+          </div>
+          <div id="file2" class="container-fluid fileholder">
+            <button class="btn filename right" onclick="moveUp(event)">angel</button>
+          </div>
+          <div id="file3" class="container-fluid fileholder">
+            <button class="btn filename middle" onclick="moveUp(event)">headlock</button>
+          </div>
+          <div id="file4" class="container-fluid fileholder">
+            <button class="btn filename left" onclick="moveUp(event)">spell</button>
+          </div>
+          <div id="file5" class="container-fluid fileholder">
+          </div>
+        </div>
+
+        <div class="col-6">
+
+          <div id="file1" class="container-fluid fileholder">
+            <button class="btn filename middle" onclick="moveUp(event)">cow man</button>
+          </div>
+          <div id="file2" class="container-fluid fileholder">
+            <button class="btn filename right" onclick="moveUp(event)">angel</button>
+          </div>
+          <div id="file3" class="container-fluid fileholder">
+            <button class="btn filename middle" onclick="moveUp(event)">headlock</button>
+          </div>
+          <div id="file4" class="container-fluid fileholder">
+            <button class="btn filename left" onclick="moveUp(event)">spell</button>
+          </div>
+          <div id="file5" class="container-fluid fileholder">
+          </div>
+        </div>
+      </div>
+    </div>
 
     </section>
 
@@ -148,6 +204,19 @@
           </fieldset>
        </form>
       </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        function moveUp(event) {
+          const button = event.target;
+          const parentDiv = button.closest('.fileholder');
+          if (parentDiv) {
+            // Toggle the translate-up class
+            parentDiv.classList.toggle('translate-up');
+          }
+        }
+      </script>
+      <script src="form.js"></script>
     </body>
 
     <footer class="py-2">

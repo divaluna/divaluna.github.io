@@ -1,5 +1,4 @@
 window.onload = function() {
-
     function toggleLargeText() {
         document.body.classList.toggle("largeText");
     }
@@ -37,7 +36,13 @@ window.onload = function() {
     const eggButton = document.getElementById("eggButton");
     eggButton.addEventListener("click", namePrompt);
 
-  
+        
 }
+
+
+      
+
+  
+
   
   

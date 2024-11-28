@@ -1,7 +1,7 @@
 
 /* General styles */
 body {
-    background-color: #efefef; /* Light gray background */
+    background-color: #efefef; 
     margin-left: 0px;
     padding-left: 20px;
     padding-right: 20px;
@@ -81,10 +81,40 @@ body {
 }
 
 #funfact{
-  height: 1270px;
+  height: auto;
   position: relative;
   margin-bottom: 1rem;
   margin-top: 5pt;
+}
+
+#portfolio{
+  height: 1000px;
+  position: relative;
+  top: 80pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+
+}
+
+#seo_page{
+  height: auto;
+  position: relative;
+  margin-top: 80pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin-bottom: 1rem;
+}
+
+footer{
+  height: 80px;
+  margin-top: 20px;
+  position: static;
+  bottom: 0;
+
+}
+
+#form{
+  height: 1000px;
 }
   
   .cover-image {
@@ -205,6 +235,7 @@ body {
   -webkit-animation: glow-red 1s ease-in-out infinite alternate;
   -moz-animation: glow-red 1s ease-in-out infinite alternate;
   animation: glow-red 1s ease-in-out infinite alternate;
+  cursor: pointer;
 }
 
 
@@ -238,13 +269,15 @@ figcaption{
   margin-bottom: 7px;
 }
 
-.glass-container-small:hover{
+.infobox:hover .glass-container-small{
   background-color: #34343450;
   color: rgba(255, 255, 255, 0.492);
   border-color: #34343450;
-  box-shadow: 0 0 8px #34343450; /* Glowing effect */
+  box-shadow: 0 0 8px #34343450;
+  cursor: pointer;
 
 }
+
 
   .easter-egg{
     background: rgba(255, 255, 255, 0.05);
@@ -311,6 +344,17 @@ figcaption{
     object-fit: cover;
     max-width: 350px;
     border-radius: 20px;
+    border: 2px solid #FB4B66;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+  }
+
+  .infobox:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 10px #FB4B66;
+
   }
 
   #design{
@@ -328,6 +372,11 @@ figcaption{
     background-size: cover;
   }
 
+  #tech{
+    background-image: url("techproj.png");
+    background-size: cover;
+  }
+
   #photo1{
     background-image: url("film.JPG");
     background-size: cover;
@@ -342,6 +391,102 @@ figcaption{
     background-image: url("shrek.JPG");
     background-size: cover;
   }
+
+
+  .fileholder{
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 10pt;
+    width: 600px;
+    top: 27%;
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .portfolio_image{
+    width: 35%; /* Scale image to fill parent's width */
+    margin-top: 10pt;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image scales within bounds */
+    display: block; /* Remove inline spacing */
+    z-index: inherit;
+  }
+
+  .translate-up{
+    transform: translateY(-180pt);
+  }
+
+  .filename{
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: auto;
+    top: 2%;
+    position: absolute;
+  }
+
+  .filename:hover{
+    text-shadow: rgba(251,75,101,1) 0px 0px 8px;
+  }
+
+  #file1{
+    background-image: url('file_middle.svg');
+    z-index: 1;
+
+  }
+
+  #file2{
+    background-image: url('file_right.svg');
+    position: absolute;
+    top: 29%;
+    z-index: 2;
+  }
+
+  #file3{
+    background-image: url('file_middle.svg');
+    position: absolute;
+    top: 31%;
+    z-index: 3;
+  }
+
+  #file4{
+    background-image: url('file_left.svg');
+    position: absolute;
+    top: 33%;
+    z-index: 4;
+  }
+
+  #file5{
+    background-image: url('file_cover.svg');
+    position: absolute;
+    top: 35%;
+    z-index: 5;
+  }
+
+  #covername{
+    line-height: 1;
+    -webkit-text-stroke: 1.5px #efefef;
+  }
+
+  .middle{
+    left: 45%;
+  }
+
+ .right{
+    left: 77%;
+  }
+
+  .left{
+    position: absolute;
+    left: 16%;
+  }
+
 
   
   /* Name Title */
