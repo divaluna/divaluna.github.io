@@ -100,9 +100,13 @@ body {
   height: auto;
   position: relative;
   margin-top: 80pt;
-  padding-left: 10pt;
-  padding-right: 10pt;
   margin-bottom: 1rem;
+}
+
+#courses{
+  height: auto;
+  position: relative;
+  margin-top: 80pt;
 }
 
 footer{
@@ -242,6 +246,21 @@ footer{
 figure{
   margin-left: 40pt;
 }
+
+mark {background: #54566f2e!important}
+
+.accordion {
+  --bs-accordion-btn-color: #54566f;
+  --bs-accordion-btn-bg: #54566f33;
+  --bs-accordion-active-bg: #54566f74;
+  --bs-accordion-active-color: #3a3b4a;
+  --bs-accordion-border-color:#54566f; 
+}
+
+.accordion-button{
+  font-weight: 500;
+}
+
 
 .photobox{
   background: #342f2f;
