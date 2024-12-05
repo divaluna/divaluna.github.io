@@ -83,120 +83,225 @@
     </section>
 
     <section id="portfolio">
-      <h1>portfolio</h1>
-      <h5>graphic design</h5>
-      <h5>writing</h5>
-      <h5>tech projects</h5>
-      <img src="stickynote.svg" style="margin-left: 300pt; margin-top: -160pt; transform: scale(0.9);">
-      <img src="stickynote2.svg" style="margin-left: 600pt; margin-top: -190pt; transform: scale(0.8);">
-      <div class="container">
-      <div class="row">
-        <div class="col-6">
+      <h1><span>design </span><span class="accent">portfolio</span></h1>
+      <img src="stickynote.svg" style="margin-left: 250pt; margin-top: -50pt; transform: scale(0.9);">
+      <img src="stickynote2.svg" style="margin-left: 500pt; margin-top: -100pt; transform: scale(0.8);">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-6">
+            <div class="d-flex justify-content-center">
           <div id="file1" class="container-fluid fileholder">
             <button class="btn filename middle" onclick="moveUp(event)">cow man</button>
-            <img class="btn img-fluid portfolio_image" src="cowman.png">
+            <img class="btn img-fluid portfolio_image" data-bs-toggle="modal" data-bs-target="#cowmanModal" src="cowman.png">
           </div>
           <div id="file2" class="container-fluid fileholder">
             <button class="btn filename right" onclick="moveUp(event)">angel</button>
+            <img class="btn img-fluid portfolio_image" data-bs-toggle="modal" data-bs-target="#angelModal" src="angel.png">
           </div>
           <div id="file3" class="container-fluid fileholder">
             <button class="btn filename middle" onclick="moveUp(event)">headlock</button>
+            <img class="btn img-fluid portfolio_image" data-bs-toggle="modal" data-bs-target="#headlockModal" src="headlock.png">
           </div>
           <div id="file4" class="container-fluid fileholder">
             <button class="btn filename left" onclick="moveUp(event)">spell</button>
-          </div>
-          <div id="file5" class="container-fluid fileholder">
-          </div>
-        </div>
-
-        <div class="col-6">
-
-          <div id="file1" class="container-fluid fileholder">
-            <button class="btn filename middle" onclick="moveUp(event)">cow man</button>
-          </div>
-          <div id="file2" class="container-fluid fileholder">
-            <button class="btn filename right" onclick="moveUp(event)">angel</button>
-          </div>
-          <div id="file3" class="container-fluid fileholder">
-            <button class="btn filename middle" onclick="moveUp(event)">headlock</button>
-          </div>
-          <div id="file4" class="container-fluid fileholder">
-            <button class="btn filename left" onclick="moveUp(event)">spell</button>
+            <img class="btn img-fluid portfolio_image" data-bs-toggle="modal" data-bs-target="#spellModal" src="spell.png">
           </div>
           <div id="file5" class="container-fluid fileholder">
           </div>
         </div>
       </div>
+
+        <div class="modal" tabindex="-1" id="cowmanModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">cowman</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="cowman.png">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  <!-- Angel Modal -->
+  <div class="modal" tabindex="-1" id="angelModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">angel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="angel.png" alt="Angel">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Headlock Modal -->
+  <div class="modal" tabindex="-1" id="headlockModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">headlock</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="headlock.png" alt="Headlock">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spell Modal -->
+  <div class="modal" tabindex="-1" id="spellModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">spell</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="spell.png" alt="Spell">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+  <div class="justify-content-center" style="margin-top: 80pt; background-color: #ffffffac; padding: 20pt; border-radius: 20pt; margin-bottom: 100pt;">
+    <h2>portfolio form</h2>
+    <p>This form will help me make this website better! Filling it out will give me some insight on what is wanted for portfolio websites.</p>
+    <button type="button" class="btn btn-bd-primary" data-bs-toggle="modal" data-bs-target="#portfolioFormModal">
+      take my portfolio form!
+    </button>
+  </div>
+  </div>
+  <hr>
+      </div>
     </div>
 
-    </section>
+  <section id="port2">
+      <div class="container-fluid">
+      <div class="row justify-content-center">
+        <h1><span>tech</span><span class="accent"> projects</span></h1>
+        <div class="row justify-content-center g-3">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="width: 25rem;">
+            <img src="techproj.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">portfolio website</h5>
+              <p class="card-text">This entire website was made by me! I designed the site and created all of the elements on Figma and used Bootstrap as my base.</p>
+              <a href="index.html" class="btn btn-bd-primary">Homepage</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="width: 25rem;">
+            <img src="terrahacks.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">terrahacks website</h5>
+              <p class="card-text">I was the lead website designer for the TerraHacks website for the 2024 hackathon! I also created all of the images and worked as the Lead graphic designer.</p>
+              <a href="https://terrahacks.ca" target="_blank" class="btn btn-bd-primary">TerraHacks 2024</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-     <!-- form -->
-     <section id="form">
-      <h2><u>Portfolio Website Info Form</u></h2>
-      <form id="myform"> 
-          <input type="button" onclick="alert('This form will ask a few questions to help build the creation of a portfolio website.')" value="Form Purpose">
-          <fieldset>
-              
-              <legend>Basic Information</legend>
-              <label for="fname">First name:</label><br>
-              <input id="fname" type="text" name="fname"><br>
+    <div class="modal fade" id="portfolioFormModal" tabindex="-1" aria-labelledby="portfolioFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="portfolioFormLabel">Portfolio Website Info Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your Form -->
+            <form id="myform">
+              <fieldset>
+                <legend>Basic Information</legend>
+                <label for="fname">First name:</label>
+                <input id="fname" type="text" name="fname" class="form-control" required><br>
 
-              <label for="lname">Last name:</label><br>
-              <input id="lname" type="text" name="lname"><br>
+                <label for="lname">Last name:</label>
+                <input id="lname" type="text" name="lname" class="form-control" required><br>
 
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required><br>
 
-              <label for="experience">How many years of hiring experience do you have?:</label>
-              <select id="experience" name="experience">
+                <label for="exp">How many years of hiring experience do you have?</label>
+                <select id="exp" name="exp" class="form-select" required><br>
                   <option value="1year">Less than 1 year</option>
                   <option value="1-3years">1-3 years</option>
                   <option value="4-6years">4-6 years</option>
                   <option value="6+years">6+ years</option>
-              </select>
+                </select>
+                <p class="form-label">What is your job title or role within your organization?</p>
+                <input type="radio" id="manager" name="role" value="Manager">
+                <label for="manager">Manager</label><br>
+                <input type="radio" id="hr" name="role" value="Human Resources">
+                <label for="hr">Human Resources</label><br>
+                <input type="radio" id="recruitment" name="role" value="Recruitment">
+                <label for="recruitment">Recruitment</label><br>
+                <input type="radio" id="lead" name="role" value="Lead">
+                <label for="lead">Lead</label><br><br>
+              </fieldset>
+    
+              <fieldset>
+                <legend>Portfolio Website</legend>
+                <p class="form-label">1. Select all factors that should be on a portfolio website.</p>
+                <input type="checkbox" id="factor1" name="factor1" value="Photos">
+                <label for="factor1">Photos</label><br>
+                <input type="checkbox" id="factor2" name="factor2" value="Education">
+                <label for="factor2">Education</label><br>
+                <input type="checkbox" id="factor3" name="factor3" value="Contact Info">
+                <label for="factor3">Contact Info</label><br>
+                <input type="checkbox" id="factor4" name="factor4" value="Chat Option">
+                <label for="factor4">Chat Option</label><br>
+                <input type="checkbox" id="factor5" name="factor5" value="Experience">
+                <label for="factor5">Experience</label><br>
+                <input type="checkbox" id="factor6" name="factor6" value="Awards">
+                <label for="factor6">Awards</label><br>
+                <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
+                <label for="factor7">Hobbies</label><br><br>
 
-              <p>What is your job title or role within your organization?</p>
-              <input type="radio" id="manager" name="role" value="Manager">
-              <label for="manager">Manager</label><br>
-              <input type="radio" id="hr" name="role" value="Human Resources">
-              <label for="hr">Human Resources</label><br>
-              <input type="radio" id="recruitment" name="role" value="Recruitment">
-              <label for="recruitment">Recruitment</label><br>
-              <input type="radio" id="lead" name="role" value="Lead">
-              <label for="lead">Lead</label><br>
-          </fieldset>
+                <label for="favcolor" class="form-label">2. Select the colour that would appeal the most on a portfolio website:</label>
+                <input type="color" name="favcolor" id="favcolor" value="#000" class="form-control form-control-color"><br>
 
-          <fieldset>
-              <legend>Portfolio Website</legend>
-              
-              <p>1. Select all factors that should be on a portfolio website.</p>
-              <input type="checkbox" id="factor1" name="factor1" value="Photos">
-              <label for="factor1">Photos</label><br>
-              <input type="checkbox" id="factor2" name="factor2" value="Education">
-              <label for="factor2">Education</label><br>
-              <input type="checkbox" id="factor3" name="factor3" value="Contact Info">
-              <label for="factor3">Contact Info</label><br>
-              <input type="checkbox" id="factor4" name="factor4" value="Chat Option">
-              <label for="factor4">Chat Option</label><br>
-              <input type="checkbox" id="factor5" name="factor5" value="Experience">
-              <label for="factor5">Experience</label><br>
-              <input type="checkbox" id="factor6" name="factor6" value="Awards">
-              <label for="factor6">Awards</label><br>
-              <input type="checkbox" id="factor7" name="factor7" value="Hobbies">
-              <label for="factor7">Hobbies</label><br>
+                <p>3. What is your expectation of a portfolio website from a suitable candidate?</p>
+                <textarea name="description" rows="10" cols="30" class="form-control" required>Text here...</textarea><br>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
 
-              <label for="favcolor">2. Select the colour that would appeal the most on a portfolio website:</label>
-              <input type="color" name="favcolor" id="favcolor" value="#000">
-
-              <p>3. What is your expectation of a portfolio website from a suitable candidate?</p>
-              <textarea name="description" rows="10" cols="30">Text here...</textarea><br>
-              <input type="submit" value="Submit">
-              <input type="reset" value="Reset">
-
-          </fieldset>
-       </form>
-      </section>
+                <input type="submit" value="Submit" class="btn btn-bd-primary">
+                <input type="reset" value="Reset" class="btn btn-secondary">
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script>
@@ -209,6 +314,7 @@
           }
         }
       </script>
+  
       <script src="form.js"></script>
     </body>
 

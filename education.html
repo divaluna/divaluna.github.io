@@ -11,7 +11,7 @@
                 
     </head>
 
-    <body>
+    <body class="d-flex flex-column min-vh-100">
     <!-- navigation bar -->
     <section id="navigation">
       <nav class="navbar navbar-expand-lg bg-custom fixed-top">
@@ -75,51 +75,68 @@
             </div>
           </div>
         </nav>
-
     </section>
 
+    <main class="flex-grow-1">
     <!-- education information -->
     <section id="edu">
-      <h2><u>Education</u></h2>
-      <ol>
-          <li><b>Mary Ward Catholic Secondary School</b></li>
-          <ul>
-              <li><i>September 2017 - August 2021</i></li>
-          </ul>
-          <li><b>Toronto Metropolitan University</b></li>
-              <ul>
-                  <li><i>September 2022 - Present</i></li>
-              </ul>
+      <h1>education</h1>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Mary Ward Catholic Secondary School</div>
+            <ul>
+              <li>Business SHSM</li>
+              <li>Average: 94%</li>
+              <li>Member of GSA Club</li>
+              <li>Senior Editor of Photgraphy Club</li>
+            </ul>
+          </div>
+          <span class="badge rounded-pill">September 2017 - August 2021</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Toronto Metropolitan University</div>
+            <ul>
+              <li>Member of Ted Rogers Student Society</li>
+              <li>Member of PACS (Practical Applications of Computer Science)</li>
+              <li>Ted Rogers Badge: Python</li>
+              <li>Ted Rogers Badge: SQL</li>
+            </ul>
+          </div>
+          <span class="badge rounded-pill">September 2022 - Present</span>
+        </li>
       </ol>
+
       <hr>
   </section>
 
-  <section id="awards">
-    <h2><u>Educational Awards + Certifications</u></h2>
-    <h3> Toronto Metropolitan University </h3>
-    <ul>
-        <li>Ted Rogers Badge: Python</li>
-        <li>Ted Rogers Badge: SQL</li>
-    </ul>
-    <hr>
-</section>
-
 <!-- extra curriculars -->
 <section id="clubs">
-    <h2><u>Extra-Curriculars</u></h2>
-    <ol>
-        <li><b>Ted Rogers Student Society</b></li>
-        <ul>
+    <h2>extra-curriculars</h2>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Ted Rogers Student Society</div>
+          <ul>
             <li>Website Designer - Marketing Committee</li>
-        </ul>
-        <li><b>Practical Applications of Computer Science (PACS)</b></li>
-        <ul>
-            <li>TRSM Representative - Representatives</li>
-            <li>Graphic Designer - Communications Committee</li>
-        </ul>
+          </ul>
+        </div>
+        <span class="badge rounded-pill">May 2024 - Present</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Practical Applications of Computer Science (PACS)</div>
+          <ul>
+            <li>TRSM Representative - Board of Directors</li>
+            <li>Graphic Designer - Marketing Communittee</li>
+          </ul>
+        </div>
+        <span class="badge rounded-pill">May 2024 - Present</span>
+      </li>
     </ol>
-    <hr>
 </section>
+</main>
 
     </body>
 

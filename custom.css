@@ -88,9 +88,9 @@ body {
 }
 
 #portfolio{
-  height: 1000px;
+  height: 900pt;
   position: relative;
-  top: 80pt;
+  margin-top: 80pt;
   padding-left: 10pt;
   padding-right: 10pt;
 
@@ -103,11 +103,12 @@ body {
   margin-bottom: 1rem;
 }
 
-#courses{
+#courses, #edu, #experience{
   height: auto;
   position: relative;
   margin-top: 80pt;
 }
+
 
 footer{
   height: 80px;
@@ -115,10 +116,6 @@ footer{
   position: static;
   bottom: 0;
 
-}
-
-#form{
-  height: 1000px;
 }
   
   .cover-image {
@@ -255,6 +252,15 @@ mark {background: #54566f2e!important}
   --bs-accordion-active-bg: #54566f74;
   --bs-accordion-active-color: #3a3b4a;
   --bs-accordion-border-color:#54566f; 
+}
+
+.badge{
+  --bs-badge-color: rgb(255, 255, 255);
+  background-color: #FB4B66;
+}
+
+.list-group{
+  --bs-list-group-border-color: #54566f;
 }
 
 .accordion-button{
@@ -563,7 +569,13 @@ figcaption{
 
   h2{
     position: relative;
+    font-family: 'Helvetica Neue 83 Extended';
   }
+
+  .glass-button{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
 
   h5{
     margin-top: 0pt;
@@ -618,6 +630,19 @@ figcaption{
 
 .bg-custom {
     background-color: #efefef;
+}
+
+.btn-bd-primary {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #FB4B66;
+  --bs-btn-border-color: #FB4B66;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #E0405C;
+  --bs-btn-hover-border-color: #E0405C;
+  --bs-btn-focus-shadow-rgb: 251, 75, 102;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #C6354F;
+  --bs-btn-active-border-color: #C6354F;
 }
 
 /* Match the dropdown menu width to the nav link */
@@ -732,7 +757,6 @@ figcaption{
     border-top: 1.25px solid #4d4e5a; /* Matches outline style in nav */
     position: static;
     left: 0;
-    bottom: 0;
     width: 100%;
     padding: 1rem;
 }
